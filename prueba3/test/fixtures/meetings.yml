@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  meeting_title: MyString
+  meeting_date: MyString
+  user: one
+  virtual: false
+
+two:
+  meeting_title: MyString
+  meeting_date: MyString
+  user: two
+  virtual: false
