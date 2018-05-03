@@ -19,7 +19,7 @@
             <a class="nav-link" href="http://localhost/ConsumirApi/clientIndex.php">Clientes</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="http://localhost/ConsumirApi/contactIndex.php">Contactos</a>
+            <a class="nav-link" href="http://localhost/ConsumirApi/contacIndex.php">Contactos</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="http://localhost/ConsumirApi/meetingIndex.php">Reuniones</a>
@@ -85,9 +85,7 @@
                   <option value="Otros">Otros</option>
                 </select>
               </div>
-              <a id="create" type="submit" class="btn btn-success" onclick="saveClientAjax()">
-      Registrar
-   </a>
+              <a id="create" class="btn btn-success" onclick="saveClientAjax();">Registrar</a>
           </div>
         </div>
       </div>
@@ -139,7 +137,13 @@
       });
   }
   
+  
 </script>
+<script>
+    function cerrar(){
+      window.location.replace("http://localhost/ConsumirApi/principal.php?cerrar=exit");
+    }
+  </script>
 
   </body>
 </html>

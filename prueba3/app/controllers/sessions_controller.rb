@@ -15,7 +15,7 @@ class SessionsController < ApplicationController
       session = Session.new(token: token)
       session.user = user
     if session.save
-      render json: "token: #{token}".to_json, status: :created
+      render json: "token: #{token},#{user.user_type}".to_json, status: :created
       end
     end
   end

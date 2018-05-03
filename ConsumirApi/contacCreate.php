@@ -18,7 +18,7 @@
             <a class="nav-link" href="http://localhost/ConsumirApi/clientIndex.php">Clientes</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="http://localhost/ConsumirApi/contactIndex.php">Contactos</a>
+            <a class="nav-link" href="http://localhost/ConsumirApi/contacIndex.php">Contactos</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="http://localhost/ConsumirApi/meetingIndex.php">Reuniones</a>
@@ -126,7 +126,7 @@
       type:"post",
       success:function(response){
         alert("Registrado");
-        window.location.replace("http://localhost/ConsumirApi/contactIndex.php");
+        window.location.replace("http://localhost/ConsumirApi/contacIndex.php");
       },dataType:"json",
       contentType:"application/json"
       
@@ -155,6 +155,12 @@ $(document).ready(function(){
     });
   
 </script>
+
+<script>
+    function cerrar(){
+      window.location.replace("http://localhost/ConsumirApi/principal.php?cerrar=exit");
+    }
+  </script>
 
 </body>
 </html>

@@ -1,4 +1,4 @@
-s<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 	<title>Cliente</title>
@@ -19,7 +19,7 @@ s<!DOCTYPE html>
             <a class="nav-link" href="http://localhost/ConsumirApi/clientIndex.php">Clientes</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="http://localhost/ConsumirApi/contactIndex.php">Contactos</a>
+            <a class="nav-link" href="http://localhost/ConsumirApi/contacIndex.php">Contactos</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="http://localhost/ConsumirApi/meetingIndex.php">Reuniones</a>
@@ -60,7 +60,7 @@ s<!DOCTYPE html>
       </div>
       <div class="form-group">
         <label for="exampleLastName">Cedula Juridica</label>
-        <input id="legal_ducument" type="text" class="form-control" name="legal_ducument">
+        <input id="legal_document" type="text" class="form-control" name="legal_document">
       </div>
       <div class="form-group">
         <label for="examplePhone">Página Web</label>
@@ -116,7 +116,7 @@ s<!DOCTYPE html>
       datatype: 'application/json',
       success:function(response){
         document.getElementById("name").value = response.name;
-        document.getElementById("legal_ducument").value = response.legal_ducument;
+        document.getElementById("legal_document").value = response.legal_document;
         document.getElementById("web_page").value = response.web_page;
         document.getElementById("address").value = response.address;
         document.getElementById("phone").value = response.phone;
@@ -133,7 +133,7 @@ s<!DOCTYPE html>
     
      var id= "<?php echo $_GET["id"]  ?>";
      var name = $('#name').val();
-     var legal_ducument = $('#legal_ducument').val();
+     var legal_ducument = $('#legal_document').val();
      var web_page =   $('#web_page').val();
      var address = $('#address').val();
       var phone =   $('#phone').val();
@@ -141,7 +141,7 @@ s<!DOCTYPE html>
 
        var parametros={
         "name": name,
-        "legal_ducument": legal_ducument,
+        "legal_document": legal_ducument,
         "web_page": web_page,
         "address": address,
         "phone": phone,
@@ -163,5 +163,10 @@ s<!DOCTYPE html>
   }
   
 </script>
+<script>
+    function cerrar(){
+      window.location.replace("http://localhost/ConsumirApi/principal.php?cerrar=exit");
+    }
+  </script>
 </body>
 </html>

@@ -238,6 +238,11 @@ display: none;
     }
     
 </script>
+<script>
+    function cerrar(){
+      window.location.replace("http://localhost/ConsumirApi/principal.php?cerrar=exit");
+    }
+  </script>
 
 </body>
 </html>
